@@ -68,17 +68,49 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
+  test("can divide two small positive integers", () => {
+    expected = 2
+    actual = divide (10,5);
+    expect(actual).toBe(expected);
+  })
+
+  test("returns inifinity when dividing by 0", () => {
+    expected = Infinity
+    actual = divide (5, 0);
+    expect(actual).toBe(expected);
+  })
 
 });
 
 describe('modulus', () => {
+  test("can return a remainder when dividing two integers", () => {
+    expected = 1
+    actual = modulus (5,2);
+    expect(actual).toBe(expected);
+    })
+
+  test("can return a NaN when finding the remainer when dividing by zero", () => {
+    expected = NaN
+    actual = modulus (5,0);
+    expect(actual).toBe(expected);
+      })
 
 });
 
 describe('even', () => {
+  test("if returns true", () => {
+    expected= true;
+    actual = even (2);
+    expect(actual).toBe(expected);
+  })
 
 });
 
 describe('odd', () => {
+  test("if returns false", () => {
+    expected = false;
+    actual = even (1);
+    expect(actual).toBe(expected);
+  })
 
 });
