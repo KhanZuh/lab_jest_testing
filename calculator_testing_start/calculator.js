@@ -19,9 +19,8 @@ const modulus = (a, b) => {
     return a%b
 }
 
-const even = (number) => {
-}
-
+const even = null
+// 
 
 const odd = null;
 
