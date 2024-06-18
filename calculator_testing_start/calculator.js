@@ -2,15 +2,25 @@ const sum = function(a, b){
     return a + b;
 };
 
-const subtract = null;
+const subtract = (a, b) => {
+    return a-b;
+}
 
-const multiply = null;
 
-const divide = null;
+const multiply = (a, b) => {
+    return a*b;
+}
 
-const modulus = null;
+const divide = (a, b) => {
+    return a/b;
+}
 
-const even = null;
+const modulus = (a, b) => {
+    return a%b
+}
+
+const even = null
+// 
 
 const odd = null;
 
