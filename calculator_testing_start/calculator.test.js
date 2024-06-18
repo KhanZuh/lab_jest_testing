@@ -80,6 +80,14 @@ describe('divide', () => {
     expect(actual).toBe(expected);
   })
 
+  // Extension
+  test('returns a number greater than zero when dividing a positive number by a smaller positive number', () => {
+    actual = divide(10, 5);
+    expect(actual).toBeGreaterThan(0);
+  });
+
+  
+
 });
 
 describe('modulus', () => {
@@ -89,11 +97,14 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
     })
 
-  test("can return a NaN when finding the remainer when dividing by zero", () => {
+  test("can return a NaN when finding the remainder when dividing by zero", () => {
     expected = NaN
     actual = modulus (5,0);
     expect(actual).toBe(expected);
       })
+
+
+
 
 });
 
