@@ -19,10 +19,17 @@ const modulus = (a, b) => {
     return a%b
 }
 
-const even = null
-// 
+const even = (number) => {
+    return number%2 === 0
+}
 
-const odd = null;
+//const even = num => num % 2 === 0;
+
+const odd = (number) => {
+    return !even(number);
+}
+
+
 
 module.exports = { 
     sum, 
