@@ -74,7 +74,7 @@ describe('divide', () => {
     expect(actual).toBe(expected);
   })
 
-  test("returns inifinity when dividing by 0", () => {
+  test("returns inifinity when dividing by 0", () => { // Q for the instructors - thought dividing by zero returns NaN (from lesson) --> but in this case it is expecting infinity (so changed the test to expect infinity)
     expected = Infinity
     actual = divide (5, 0);
     expect(actual).toBe(expected);
