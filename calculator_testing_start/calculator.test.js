@@ -103,7 +103,11 @@ describe('modulus', () => {
     expect(actual).toBe(expected);
       })
 
-
+  test("can return zero", () => {
+    expected = 0
+    actual = modulus (10,2);
+    expect(actual).toBe(expected);
+      })
 
 
 });
